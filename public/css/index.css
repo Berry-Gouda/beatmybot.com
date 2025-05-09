@@ -1,0 +1,84 @@
+h1{
+    padding: 30px;
+    font-family: 'Playfair';
+    font-size: 72px;
+}
+
+h1.recent{
+    font-size: 42px;
+    padding-bottom: 0px;
+}
+
+h2, h3{
+    font-family: 'Nunito';
+    font-size: 26px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.recent-games{
+    display: grid;
+    margin: auto;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    width: 90%;
+}
+
+
+
+
+@media (max-width: 767px){
+
+    .recent-games {
+        display: grid;
+        margin: auto;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        justify-content: center; 
+        width: 90%;
+    }
+
+
+    button{
+        width: 150px;
+        height: 55px;
+        margin: auto;
+        margin-top: 10px;
+        display: block;
+        font-family: 'Nunito Mobile';
+        
+        
+    }
+    h1{
+        margin:auto;
+        text-align: center;
+        font-family: 'Playfair';
+        font-size: 42px;
+        font-weight:800;
+        font-stretch: expanded;
+    }
+    
+    h3, h2{
+        margin:auto;
+        text-align: center;
+        font-family: 'Nunito Mobile';
+        font-size: 18px;
+    }
+
+    h1.recent{
+        margin:auto;
+        text-align: center;
+        font-family: 'Nunito Mobile';
+        font-size: 24px;
+    }
+
+    
+}
+

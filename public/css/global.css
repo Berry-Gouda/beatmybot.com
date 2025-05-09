@@ -1,0 +1,226 @@
+body{
+    display: grid;
+    align-items: center;
+    background-color:#F2C078;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'Nunito Mobile';
+    src: url('../fonts/Nunito_Sans/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf');
+}
+@font-face {
+    font-family: 'Playfair';
+    src: url('../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+h1, h3, h2{
+    margin:auto;
+    text-align: center;
+}
+
+button{
+    width: 250px;
+    height: 75px;
+    font-size: larger;
+    margin: 35px auto;
+    display: block;
+    font-family: 'Nunito';
+    
+}
+
+.recent-game-state{
+    display: flex;
+    justify-content: center;
+    gap: 75px; 
+    width: 100%; 
+}
+
+.single-game {
+    width: 50%;
+    height: 360px;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 25px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.single-game h3{
+    font-size: 22px;
+}
+
+.recent-user-state{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    width: 30%;
+    row-gap: 5px;
+    column-gap: 0px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.recent-bot-state{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    row-gap: 5px;
+    column-gap: 0px;
+    width: 30%;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.home-letter-square {
+    display: flex;
+    background-color: grey;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    min-width: 15px;  
+    min-height: 20px; 
+}
+
+.home-invalid-letter-square{
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;   
+    min-width: 15px;  
+    min-height: 20px; 
+}
+
+.home-yellow-letter-square{
+    display: flex;
+    background-color: yellow;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;    
+    min-width: 15px;  
+    min-height: 20px; 
+}
+
+.home-green-letter-square{
+    display: flex;
+    background-color: green;
+    width: 90%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    min-width: 20px;  
+    min-height: 20px; 
+}
+
+.full-row{
+    grid-column: 1/-1;
+}
+
+@media (max-width: 767px){
+    .single-game {
+        width: 80%;
+        height: 250px;
+        padding: 20px;
+        border: 2px solid #000;
+        border-radius: 10px;
+        margin: 15px auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+    }
+
+    .single-game h3{
+        font-size: 16px;
+    }
+
+    .recent-user-state{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        width: 50%;
+        row-gap: 5px;
+        column-gap: 5px;
+        height: 150px;
+    }
+
+    .recent-bot-state{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        row-gap: 5px;
+        column-gap: 5px;
+        width: 45%;
+        height: 150px;
+    }
+
+    .home-letter-square {
+        display: flex;
+        background-color: grey;
+        width: 90%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        min-width: 15px;  
+        min-height: 20px; 
+    }
+
+    .home-invalid-letter-square{
+        display: flex;
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;   
+        min-width: 15px;  
+        min-height: 20px; 
+    }
+
+    .home-yellow-letter-square{
+        display: flex;
+        background-color: yellow;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;    
+        min-width: 15px;  
+        min-height: 20px; 
+    }
+
+    .home-green-letter-square{
+        display: flex;
+        background-color: green;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        min-width: 20px;  
+        min-height: 20px; 
+    }
+
+
+}
